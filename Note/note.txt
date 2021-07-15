@@ -1,0 +1,17 @@
+344A
+    time limit exceed for TC#7 coz fmt.Scanf is too slow ...
+    so have to use 
+    
+    var t, n int
+    #1
+    scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+    fmt.Sscanf(scanner.Text(), "%d", &n)
+    
+    #2
+    in := bufio.NewReader(os.Stdin)
+	fmt.Fscan(in, &t)
+
+    
+    maybe this is the better solution to use in the future
+
